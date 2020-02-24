@@ -3,9 +3,9 @@ package com.thoughtworks;
 import java.util.List;
 
 public class RepositoryUtil {
-    public static void printList(List entities) {
+    public static <E> void printList(List<E> entities) {
         String result = "";
-        for (Object entity : entities) {
+        for (E entity : entities) {
             result += entity + ",";
         }
         if (result.length() > 0) {
