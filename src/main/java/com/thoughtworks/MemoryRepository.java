@@ -1,7 +1,6 @@
 package com.thoughtworks;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class MemoryRepository<E> implements Repository<E> {
     private Map<String, E> entities;
